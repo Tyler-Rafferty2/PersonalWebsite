@@ -92,13 +92,11 @@
               software that makes an impact.
             </p>
             <p>
-              I've gained experience through internships at the Federal Reserve
-              Bank of Boston and South Shore Hospital, as well as ongoing work
-              on a workforce management platform for UMass Dining. I also enjoy
-              building side projects like my photo time capsule app and an AI
-              agent for the game 2048.
+              I've gained experience through software engineering internships
+              at Fidelity Investments and the Federal Reserve Bank of Boston. I
+              also enjoy building side projects like CustomGuess, a real-time
+              multiplayer game with 2,000+ registered users.
             </p>
-            </div>
           </div>
         </div>
       </div>
@@ -111,45 +109,36 @@
         <div class="experience-timeline">
           <div class="experience-item">
             <div class="experience-content">
+              <div class="experience-date">June 2026 – August 2026</div>
+              <h3>Software Engineering Intern</h3>
+              <h4>Fidelity Investments</h4>
+              <p>
+                Built an automated API compliance monitoring system in
+                Python/Django that issued requests with invalid authentication
+                tokens and flagged non-compliant responses, helping secure
+                1,600+ APIs across Fidelity. Designed an Angular/TypeScript
+                dashboard showing endpoint ownership, test results, status
+                codes, and error reporting, backed by Django, PostgreSQL, and
+                Snowflake services. Worked in two-week Agile sprints with Jira
+                and Confluence, and presented the project and results to the
+                SVP, Head of Technology.
+              </p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-content">
               <div class="experience-date">June 2025 – August 2025</div>
-              <h3>Software Quality Engineer Intern</h3>
+              <h3>Software Engineering Intern</h3>
               <h4>Federal Reserve Bank of Boston</h4>
               <p>
-                Developed and deployed a full-stack feature (Next.js + Spring
-                Boot) for a testing tool used by 100+ financial institutions,
-                enabling randomized input fields that enhanced partner testing
-                depth and reliability. Engineered unit and integration test
-                suites (Jest, JUnit) to validate new functionality, increasing
-                coverage and improving system confidence in production.
-              </p>
-            </div>
-          </div>
-          <div class="experience-item">
-            <div class="experience-content">
-              <div class="experience-date">April 2025 – Current</div>
-              <h3>Full-Stack Software Engineer</h3>
-              <h4>UMass Work Force Management</h4>
-              <p>
-                Contributing to a project led by a graduate student in
-                partnership with UMass Dining to build a scheduling platform for
-                dining hall staff. Developing full-stack features in React, Go,
-                and SQL, including shift management and access control. Applying
-                Agile methods with Jira, CI/CD, and Git to ship and maintain
-                reliable code.
-              </p>
-            </div>
-          </div>
-          <div class="experience-item">
-            <div class="experience-content">
-              <div class="experience-date">June 2024 – August 2024</div>
-              <h3>Cybersecurity Intern</h3>
-              <h4>South Shore Hospital</h4>
-              <p>
-                Engaged in security operations using enterprise tools and
-                industry-standard frameworks, applying concepts through formal
-                and hands-on training opportunities. Played a crucial part in
-                restoring South Shore Hospital during the 2024 CrowdStrike
-                outage.
+                Developed a full-stack feature (React + Spring Boot) that
+                introduced randomized input fields, improving testing depth and
+                reliability for 100+ financial institutions using the platform.
+                Engineered unit and integration test suites (Jest, JUnit) that
+                increased coverage and caught edge cases before deployment.
+                Collaborated with product owners and senior engineers in a
+                distributed Agile environment to align with FedNow's
+                large-scale testing strategy.
               </p>
             </div>
           </div>
@@ -226,6 +215,92 @@
         <div class="projects-grid">
           <a
             class="project-card"
+            href="https://github.com/Tyler-Rafferty2/CustomGuess"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="project-image">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="project-content">
+              <h3>CustomGuess</h3>
+              <p>
+                A real-time multiplayer deduction game built with Next.js, Go,
+                and PostgreSQL around a central WebSocket pub-sub hub, with
+                2,000+ registered users and 30,000+ games played. Sustains
+                1,000+ concurrent connections at 2ms p95 latency on a single
+                EC2 instance, deployed with Terraform and GitHub Actions CI/CD.
+              </p>
+              <div class="project-tech">
+                <span>Next.js</span>
+                <span>Golang</span>
+                <span>PostgreSQL</span>
+                <span>WebSocket</span>
+                <span>AWS</span>
+                <span>Docker</span>
+              </div>
+              <div class="project-actions">
+                <span class="project-cta"
+                  ><i class="fab fa-github"></i> Open on GitHub</span
+                >
+              </div>
+            </div>
+          </a>
+          <a
+            class="project-card"
+            href="https://github.com/Tyler-Rafferty2/FinanceApp"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="project-image">
+              <i class="fas fa-wallet"></i>
+            </div>
+            <div class="project-content">
+              <h3>FinanceApp</h3>
+              <p>
+                A serverless, event-driven personal finance tracker on AWS (API
+                Gateway, Lambda, RDS Postgres, Cognito, SQS, EventBridge). Uses
+                a multi-user Drizzle ORM schema with per-user data isolation,
+                modular Terraform IaC, and async pipelines for weekly digest
+                emails and Plaid transaction sync.
+              </p>
+              <div class="project-tech">
+                <span>TypeScript</span>
+                <span>AWS</span>
+                <span>Terraform</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="project-actions">
+                <span class="project-cta"
+                  ><i class="fab fa-github"></i> Open on GitHub</span
+                >
+              </div>
+            </div>
+          </a>
+          <div class="project-card">
+            <div class="project-image">
+              <i class="fas fa-bicycle"></i>
+            </div>
+            <div class="project-content">
+              <h3>CampusBikes</h3>
+              <p>
+                A full-stack bike and scooter rental platform built with a small
+                team, letting UMass students post, browse, and rent rides. Uses
+                JWT authentication with role-protected Spring Boot endpoints,
+                and a three-service Docker Compose setup that runs with a single
+                command.
+              </p>
+              <div class="project-tech">
+                <span>Next.js</span>
+                <span>React</span>
+                <span>Spring Boot</span>
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+              </div>
+            </div>
+          </div>
+          <a
+            class="project-card"
             href="https://github.com/Tyler-Rafferty2/PhotoCapsule"
             target="_blank"
             rel="noopener"
@@ -247,68 +322,6 @@
                 <span>PostgreSQL</span>
                 <span>Docker</span>
                 <span>JWT</span>
-              </div>
-              <div class="project-actions">
-                <span class="project-cta"
-                  ><i class="fab fa-github"></i> Open on GitHub</span
-                >
-              </div>
-            </div>
-          </a>
-          <a
-            class="project-card"
-            href="https://github.com/Tyler-Rafferty2/UHitch"
-            target="_blank"
-            rel="noopener"
-          >
-            <div class="project-image">
-              <i class="fas fa-car"></i>
-            </div>
-            <div class="project-content">
-              <h3>UHitch</h3>
-              <p>
-                A full-stack ridesharing web app built during HackUMass using
-                the MERN stack. Connects college students for ride-sharing to
-                and from campus with features like user authentication, ride
-                search, and booking functionality.
-              </p>
-              <div class="project-tech">
-                <span>React</span>
-                <span>Express</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
-                <span>MERN</span>
-              </div>
-              <div class="project-actions">
-                <span class="project-cta"
-                  ><i class="fab fa-github"></i> Open on GitHub</span
-                >
-              </div>
-            </div>
-          </a>
-          <a
-            class="project-card"
-            href="https://github.com/Tyler-Rafferty2/2048AI"
-            target="_blank"
-            rel="noopener"
-          >
-            <div class="project-image">
-              <i class="fas fa-robot"></i>
-            </div>
-            <div class="project-content">
-              <h3>2048 AI</h3>
-              <p>
-                A reinforcement learning agent using Deep Q-Learning to play the
-                game 2048. Developed with Python and PyTorch, featuring
-                experience replay, neural networks, and fine-tuned reward
-                functions for strategic tile merging.
-              </p>
-              <div class="project-tech">
-                <span>Python</span>
-                <span>PyTorch</span>
-                <span>Deep Q-Learning</span>
-                <span>Neural Networks</span>
-                <span>Reinforcement Learning</span>
               </div>
               <div class="project-actions">
                 <span class="project-cta"
@@ -388,7 +401,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2025 Tyler Rafferty. All rights reserved.</p>
+        <p>&copy; 2026 Tyler Rafferty. All rights reserved.</p>
       </div>
     </footer>
 
